@@ -159,7 +159,7 @@
     
     
     <gap:plugin name="cordova-android-support-gradle-release" source="npm" version="3.0.1">
-        <param name="ANDROID_SUPPORT_VERSION" value="26.+" />
+        <param name="ANDROID_SUPPORT_VERSION" value="28.+" />
     </gap:plugin>    
     
     
