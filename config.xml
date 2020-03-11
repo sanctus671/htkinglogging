@@ -155,7 +155,7 @@
     <plugin name="cordova-plugin-inappbrowser" spec="^3.1.0" />
     
     <plugin name="onesignal-cordova-plugin" spec="2.3.3" />
-    <gap:plugin spec="https://github.com/sanctus671/cordova-plugin-stripe.git" /> 
+    <gap:plugin spec="https://github.com/sanctus671/cordova-plugin-stripe.git#v2" /> 
    
     
     
