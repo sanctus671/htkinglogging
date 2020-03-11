@@ -61,7 +61,7 @@
         <resource-file src="resources/android/styles.xml" target="res/values/styles.xml" />
         
         
-        <plugin name="onesignal-cordova-plugin" spec="^2.3.3" />
+        <plugin name="onesignal-cordova-plugin" spec="2.8.4" />
         
     </platform>
     <splash density="port-ldpi" platform="android" src="resources/android/splash/splash-port-ldpi.png" />
