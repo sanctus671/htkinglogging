@@ -150,5 +150,6 @@
     <plugin name="cordova-plugin-file-transfer" spec="^1.7.1" />
     <plugin name="cordova-plugin-file" spec="^6.0.2" />
     <gap:plugin spec="https://github.com/hypery2k/cordova-email-plugin#master" />
-    <plugin name="cordova-plugin-inappbrowser" spec="^3.1.0" /> 
+    <plugin name="cordova-plugin-inappbrowser" spec="^3.1.0" />
+    <gap:plugin spec="https://github.com/sanctus671/cordova-plugin-stripe.git#v2" />  
 </widget>
