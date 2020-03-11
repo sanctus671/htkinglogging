@@ -61,7 +61,7 @@
         <resource-file src="resources/android/styles.xml" target="res/values/styles.xml" />
         
         
-        <plugin name="onesignal-cordova-plugin" spec="2.4.5" />
+        <plugin name="onesignal-cordova-plugin" spec="2.7.0" />
         
     </platform>
     <splash density="port-ldpi" platform="android" src="resources/android/splash/splash-port-ldpi.png" />
@@ -151,5 +151,5 @@
     <plugin name="cordova-plugin-file" spec="^6.0.2" />
     <gap:plugin spec="https://github.com/hypery2k/cordova-email-plugin#master" />
     <plugin name="cordova-plugin-inappbrowser" spec="^3.1.0" />
-    <plugin name="cordova-plugin-stripe" spec="1.5.3" />
+    <gap:plugin spec="https://github.com/zyra/cordova-plugin-stripe" />
 </widget>
