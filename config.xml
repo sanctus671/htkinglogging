@@ -153,9 +153,10 @@
     <plugin name="cordova-plugin-file" spec="^6.0.2" />
     <gap:plugin spec="https://github.com/hypery2k/cordova-email-plugin#master" />
     <plugin name="cordova-plugin-inappbrowser" spec="^3.1.0" />
-
-    <gap:plugin spec="https://github.com/sanctus671/cordova-plugin-stripe.git#v2" /> 
+    
     <plugin name="onesignal-cordova-plugin" spec="2.4.5" />
+    <gap:plugin spec="https://github.com/sanctus671/cordova-plugin-stripe.git#v2" /> 
+    
     
     <gap:plugin name="cordova-android-support-gradle-release" source="npm" version="3.0.1">
         <param name="ANDROID_SUPPORT_VERSION" value="26.+" />
