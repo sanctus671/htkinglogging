@@ -155,6 +155,6 @@
     <gap:plugin spec="https://github.com/sanctus671/cordova-plugin-stripe.git#v2" />  
     <plugin name="onesignal-cordova-plugin" spec="2.4.5" />
     <gap:plugin name="cordova-android-support-gradle-release" source="npm" version="3.0.1">
-        <param name="ANDROID_SUPPORT_VERSION" value="28.+" />
+        <param name="ANDROID_SUPPORT_VERSION" value="26.+" />
     </gap:plugin>
 </widget>
