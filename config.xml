@@ -22,7 +22,7 @@
     <preference name="pgb-builder-version" value="2" />
     <preference name="ScrollEnabled" value="false" />
     <preference name="BackupWebStorage" value="none" />
-    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-minSdkVersion" value="15" />
     <preference name="android-targetSdkVersion" value="28" />
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name="FadeSplashScreenDuration" value="300" />
@@ -61,7 +61,7 @@
         <resource-file src="resources/android/styles.xml" target="res/values/styles.xml" />
         
         
-        <plugin name="onesignal-cordova-plugin" spec="2.7.0" />
+        
         
     </platform>
     <splash density="port-ldpi" platform="android" src="resources/android/splash/splash-port-ldpi.png" />
@@ -151,5 +151,6 @@
     <plugin name="cordova-plugin-file" spec="^6.0.2" />
     <gap:plugin spec="https://github.com/hypery2k/cordova-email-plugin#master" />
     <plugin name="cordova-plugin-inappbrowser" spec="^3.1.0" />
-    <gap:plugin spec="https://github.com/zyra/cordova-plugin-stripe" />
+    <gap:plugin spec="https://github.com/sanctus671/cordova-plugin-stripe.git" />  
+    <plugin name="onesignal-cordova-plugin" spec="2.4.5" />
 </widget>
