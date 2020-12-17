@@ -181,6 +181,7 @@ var SubmissionsPage = /** @class */ (function () {
     };
     SubmissionsPage.prototype.getSubmissions = function () {
         var _this = this;
+        this.loading = true;
         this.submissionService.getSubmissions(this.search).then(function (data) {
             _this.submissions = data.data;
             _this.filteredSubmissions = _this.submissions.slice();
@@ -193,7 +194,6 @@ var SubmissionsPage = /** @class */ (function () {
         });
     };
     SubmissionsPage.prototype.doSearch = function () {
-        this.loading = true;
         this.getSubmissions();
     };
     SubmissionsPage.prototype.formatDate = function (date) {

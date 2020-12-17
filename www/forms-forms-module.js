@@ -123,6 +123,7 @@ var FormsPage = /** @class */ (function () {
     };
     FormsPage.prototype.getForms = function () {
         var _this = this;
+        this.loading = true;
         this.formService.getFormGroups().then(function (data) {
             _this.offlineSerivce.saveFormGroups(data);
             _this.setFormGroupData(data);

@@ -169,6 +169,7 @@ var DocumentsPage = /** @class */ (function () {
     };
     DocumentsPage.prototype.getDocuments = function () {
         var _this = this;
+        this.loading = true;
         this.documentService.getDocumentGroups().then(function (data) {
             _this.offlineSerivce.saveDocumentGroups(data);
             _this.setDocumentGroupData(data);
