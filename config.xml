@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.sitters.app" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.htkinglogging.app" version="0.0.`" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application/activity[@android:label='@string/activity_name']">
-        <activity android:theme="@style/sittersTheme" />
+        <activity android:theme="@style/htTheme" />
     </edit-config>
     <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application">
         <application android:icon="@mipmap/launcher" android:roundIcon="@mipmap/launcher_round" />
     </edit-config>
-    <name>Sitters</name>
-    <description>Connecting babysitters and parents in New Zealand.</description>
+    <name>HT King Logging</name>
+    <description>An app for digitalizing form entry and tracking.</description>
     <author email="taylor@taylorhamling.com" href="https://www.taylorhamling.com/">Taylor Hamling</author>
     <content src="index.html" />
     <access origin="*" />
@@ -80,12 +80,6 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
         <preference name="ios-statusbarstyle" value="black-opaque" />
-        <edit-config file="*-Info.plist" mode="merge" target="NSLocationAlwaysUsageDescription">
-            <string>Send Geolocated notifications</string>
-        </edit-config>
-        <edit-config file="*-Info.plist" mode="merge" target="NSLocationWhenInUseUsageDescription">
-            <string>Send Geolocated notifications</string>
-        </edit-config>
         <edit-config file="*-Info.plist" mode="merge" target="NSPhotoLibraryUsageDescription">
             <string>Select images for your profile</string>
         </edit-config>
@@ -114,8 +108,7 @@
         <icon height="152" src="resources/ios/icon/icon-76@2x.png" width="152" />
         <icon height="167" src="resources/ios/icon/icon-167.png" width="167" />
         <icon height="167" src="resources/ios/icon/icon-83.5@2x.png" width="167" />
-		
-	<plugin name="onesignal-cordova-plugin" spec="2.7.0" />
+
 		
     </platform>
     <splash height="480" platform="ios" src="resources/ios/splash/Default~iphone.png" width="320" />
@@ -151,11 +144,8 @@
     </gap:plugin>
     <plugin name="cordova-plugin-file-transfer" spec="^1.7.1" />
     <plugin name="cordova-plugin-file" spec="^6.0.2" />
-    <gap:plugin spec="https://github.com/hypery2k/cordova-email-plugin#master" />
     <plugin name="cordova-plugin-inappbrowser" spec="^3.1.0" />
-    
-    <plugin name="onesignal-cordova-plugin" spec="2.3.3" />
-    <gap:plugin spec="https://github.com/sanctus671/cordova-plugin-stripe.git#v2" /> 
+
    
     
     
