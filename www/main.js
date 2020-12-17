@@ -572,8 +572,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_authentication_authentication_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./services/authentication/authentication.service */ "./src/app/services/authentication/authentication.service.ts");
 /* harmony import */ var _services_offline_offline_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./services/offline/offline.service */ "./src/app/services/offline/offline.service.ts");
 /* harmony import */ var _services_submission_submission_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./services/submission/submission.service */ "./src/app/services/submission/submission.service.ts");
-/* harmony import */ var _ionic_native_onesignal_ngx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @ionic-native/onesignal/ngx */ "./node_modules/@ionic-native/onesignal/ngx/index.js");
-/* harmony import */ var _ionic_storage__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @ionic/storage */ "./node_modules/@ionic/storage/fesm5/ionic-storage.js");
+/* harmony import */ var _ionic_storage__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @ionic/storage */ "./node_modules/@ionic/storage/fesm5/ionic-storage.js");
 
 
 window.fetch = whatwg_fetch__WEBPACK_IMPORTED_MODULE_1__["fetch"];
@@ -586,9 +585,8 @@ window.fetch = whatwg_fetch__WEBPACK_IMPORTED_MODULE_1__["fetch"];
 
 
 
-
 var AppComponent = /** @class */ (function () {
-    function AppComponent(platform, splashScreen, statusBar, authenticationService, router, storage, oneSignal, ngZone, offlineService, submissionService) {
+    function AppComponent(platform, splashScreen, statusBar, authenticationService, router, storage, ngZone, offlineService, submissionService) {
         var _this = this;
         this.platform = platform;
         this.splashScreen = splashScreen;
@@ -596,7 +594,6 @@ var AppComponent = /** @class */ (function () {
         this.authenticationService = authenticationService;
         this.router = router;
         this.storage = storage;
-        this.oneSignal = oneSignal;
         this.ngZone = ngZone;
         this.offlineService = offlineService;
         this.submissionService = submissionService;
@@ -658,8 +655,7 @@ var AppComponent = /** @class */ (function () {
         { type: _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_5__["StatusBar"] },
         { type: _services_authentication_authentication_service__WEBPACK_IMPORTED_MODULE_7__["AuthenticationService"] },
         { type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"] },
-        { type: _ionic_storage__WEBPACK_IMPORTED_MODULE_11__["Storage"] },
-        { type: _ionic_native_onesignal_ngx__WEBPACK_IMPORTED_MODULE_10__["OneSignal"] },
+        { type: _ionic_storage__WEBPACK_IMPORTED_MODULE_10__["Storage"] },
         { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgZone"] },
         { type: _services_offline_offline_service__WEBPACK_IMPORTED_MODULE_8__["OfflineService"] },
         { type: _services_submission_submission_service__WEBPACK_IMPORTED_MODULE_9__["SubmissionService"] }
@@ -671,8 +667,8 @@ var AppComponent = /** @class */ (function () {
             styles: [__webpack_require__(/*! ./app.component.scss */ "./src/app/app.component.scss")]
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_3__["Platform"], _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_4__["SplashScreen"], _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_5__["StatusBar"],
-            _services_authentication_authentication_service__WEBPACK_IMPORTED_MODULE_7__["AuthenticationService"], _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"], _ionic_storage__WEBPACK_IMPORTED_MODULE_11__["Storage"],
-            _ionic_native_onesignal_ngx__WEBPACK_IMPORTED_MODULE_10__["OneSignal"], _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgZone"], _services_offline_offline_service__WEBPACK_IMPORTED_MODULE_8__["OfflineService"], _services_submission_submission_service__WEBPACK_IMPORTED_MODULE_9__["SubmissionService"]])
+            _services_authentication_authentication_service__WEBPACK_IMPORTED_MODULE_7__["AuthenticationService"], _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"], _ionic_storage__WEBPACK_IMPORTED_MODULE_10__["Storage"],
+            _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgZone"], _services_offline_offline_service__WEBPACK_IMPORTED_MODULE_8__["OfflineService"], _services_submission_submission_service__WEBPACK_IMPORTED_MODULE_9__["SubmissionService"]])
     ], AppComponent);
     return AppComponent;
 }());
