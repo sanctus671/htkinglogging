@@ -59,10 +59,6 @@
         <resource-file src="resources/android/icon/mipmap-xxxhdpi/launcher_round.png" target="res/mipmap-xxxhdpi-v4/launcher_round.png" />
         <resource-file src="resources/android/icon/mipmap-xxxhdpi/launcher_foreground.png" target="res/mipmap-xxxhdpi-v4/launcher_foreground.png" />
         <resource-file src="resources/android/styles.xml" target="res/values/styles.xml" />
-        
-        
-        
-        
     </platform>
     <splash density="port-ldpi" platform="android" src="resources/android/splash/splash-port-ldpi.png" />
     <splash density="port-mdpi" platform="android" src="resources/android/splash/splash-port-mdpi.png" />
@@ -85,9 +81,7 @@
         </edit-config>
         <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
             <string>Take pictures for your profile</string>
-        </edit-config>        
-    
-        
+        </edit-config>
         <icon height="1024" src="resources/ios/icon/icon-1024.png" width="1024" />
         <icon height="29" src="resources/ios/icon/icon-small.png" width="29" />
         <icon height="58" src="resources/ios/icon/icon-small@2x.png" width="58" />
@@ -108,8 +102,6 @@
         <icon height="152" src="resources/ios/icon/icon-76@2x.png" width="152" />
         <icon height="167" src="resources/ios/icon/icon-167.png" width="167" />
         <icon height="167" src="resources/ios/icon/icon-83.5@2x.png" width="167" />
-
-		
     </platform>
     <splash height="480" platform="ios" src="resources/ios/splash/Default~iphone.png" width="320" />
     <splash height="960" platform="ios" src="resources/ios/splash/Default@2x~iphone.png" width="640" />
@@ -129,8 +121,6 @@
     <icon src="resources/icon.png" />
     <splash src="resources/splash.png" />
     <engine name="android" spec="~6.3.0" />
-     
-    
     <gap:plugin spec="https://github.com/brodysoft/cordova-sqlite-evcore-extbuild-free" />
     <plugin name="cordova-plugin-whitelist" spec="1.3.3" />
     <plugin name="cordova-plugin-statusbar" spec="2.4.2" />
@@ -145,8 +135,5 @@
     <plugin name="cordova-plugin-file-transfer" spec="^1.7.1" />
     <plugin name="cordova-plugin-file" spec="^6.0.2" />
     <plugin name="cordova-plugin-inappbrowser" spec="^3.1.0" />
-
-   
-    
-    
+    <plugin name="cordova-plugin-network-information" spec="^2.0.2" />
 </widget>
