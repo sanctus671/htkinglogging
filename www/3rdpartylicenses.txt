@@ -59,6 +59,9 @@ MIT
 @ionic-native/network
 MIT
 
+@ionic-native/onesignal
+MIT
+
 @ionic-native/splash-screen
 MIT
 

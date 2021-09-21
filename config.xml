@@ -1,11 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.htkinglogging.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
-    <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application/activity[@android:label='@string/activity_name']">
-        <activity android:theme="@style/htTheme" />
-    </edit-config>
-    <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application">
-        <application android:icon="@mipmap/launcher" android:roundIcon="@mipmap/launcher_round" />
-    </edit-config>
+<widget id="com.htkinglogging.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>HT King Logging</name>
     <description>An app for digitalizing form entry and tracking.</description>
     <author email="taylor@taylorhamling.com" href="https://www.taylorhamling.com/">Taylor Hamling</author>
@@ -33,45 +27,54 @@
     <preference name="SplashScreenBackgroundColor" value="0xFFFFFFFF" />
     <preference name="AndroidLaunchMode" value="singleTask" />
     <platform name="android">
+        <resource-file src="resources/android/xml/network_security_config.xml" target="app/src/main/res/xml/network_security_config.xml" />
         <allow-intent href="market:*" />
-        <preference name="loadUrlTimeoutValue" value="700000" />
+        <preference name="AndroidXEnabled" value="true" />
         <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application" xmlns:android="http://schemas.android.com/apk/res/android">
             <application android:networkSecurityConfig="@xml/network_security_config" />
         </edit-config>
-        <resource-file src="resources/android/xml/network_security_config.xml" target="res/xml/network_security_config.xml" />
-        <resource-file src="resources/android/icon/values/launcher_background.xml" target="res/values/launcher_background.xml" />
-        <resource-file src="resources/android/icon/mipmap-anydpi-v26/launcher.xml" target="res/mipmap-anydpi-v26/launcher.xml" />
-        <resource-file src="resources/android/icon/mipmap-anydpi-v26/launcher_round.xml" target="res/mipmap-anydpi-v26/launcher_round.xml" />
-        <resource-file src="resources/android/icon/mipmap-ldpi/launcher.png" target="res/mipmap-ldpi-v4/launcher.png" />
-        <resource-file src="resources/android/icon/mipmap-hdpi/launcher.png" target="res/mipmap-hdpi-v4/launcher.png" />
-        <resource-file src="resources/android/icon/mipmap-hdpi/launcher_round.png" target="res/mipmap-hdpi-v4/launcher_round.png" />
-        <resource-file src="resources/android/icon/mipmap-hdpi/launcher_foreground.png" target="res/mipmap-hdpi-v4/launcher_foreground.png" />
-        <resource-file src="resources/android/icon/mipmap-mdpi/launcher.png" target="res/mipmap-mdpi-v4/launcher.png" />
-        <resource-file src="resources/android/icon/mipmap-mdpi/launcher_round.png" target="res/mipmap-mdpi-v4/launcher_round.png" />
-        <resource-file src="resources/android/icon/mipmap-mdpi/launcher_foreground.png" target="res/mipmap-mdpi-v4/launcher_foreground.png" />
-        <resource-file src="resources/android/icon/mipmap-xhdpi/launcher.png" target="res/mipmap-xhdpi-v4/launcher.png" />
-        <resource-file src="resources/android/icon/mipmap-xhdpi/launcher_round.png" target="res/mipmap-xhdpi-v4/launcher_round.png" />
-        <resource-file src="resources/android/icon/mipmap-xhdpi/launcher_foreground.png" target="res/mipmap-xhdpi-v4/launcher_foreground.png" />
-        <resource-file src="resources/android/icon/mipmap-xxhdpi/launcher.png" target="res/mipmap-xxhdpi-v4/launcher.png" />
-        <resource-file src="resources/android/icon/mipmap-xxhdpi/launcher_round.png" target="res/mipmap-xxhdpi-v4/launcher_round.png" />
-        <resource-file src="resources/android/icon/mipmap-xxhdpi/launcher_foreground.png" target="res/mipmap-xxhdpi-v4/launcher_foreground.png" />
-        <resource-file src="resources/android/icon/mipmap-xxxhdpi/launcher.png" target="res/mipmap-xxxhdpi-v4/launcher.png" />
-        <resource-file src="resources/android/icon/mipmap-xxxhdpi/launcher_round.png" target="res/mipmap-xxxhdpi-v4/launcher_round.png" />
-        <resource-file src="resources/android/icon/mipmap-xxxhdpi/launcher_foreground.png" target="res/mipmap-xxxhdpi-v4/launcher_foreground.png" />
-        <resource-file src="resources/android/styles.xml" target="res/values/styles.xml" />
+        <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application" xmlns:android="http://schemas.android.com/apk/res/android">
+            <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+        </edit-config>
+        <resource-file src="resources/android/icon/values/launcher_background.xml" target="app/src/main/res/values/launcher_background.xml" />
+        <resource-file src="resources/android/icon/mipmap-anydpi-v26/launcher.xml" target="app/src/main/res/mipmap-anydpi-v26/launcher.xml" />
+        <resource-file src="resources/android/icon/mipmap-anydpi-v26/launcher_round.xml" target="app/src/main/res/mipmap-anydpi-v26/launcher_round.xml" />
+        <resource-file src="resources/android/icon/mipmap-ldpi/launcher.png" target="app/src/main/res/mipmap-ldpi-v4/launcher.png" />
+        <resource-file src="resources/android/icon/mipmap-hdpi/launcher.png" target="app/src/main/res/mipmap-hdpi-v4/launcher.png" />
+        <resource-file src="resources/android/icon/mipmap-hdpi/launcher_round.png" target="app/src/main/res/mipmap-hdpi-v4/launcher_round.png" />
+        <resource-file src="resources/android/icon/mipmap-hdpi/launcher_foreground.png" target="app/src/main/res/mipmap-hdpi-v4/launcher_foreground.png" />
+        <resource-file src="resources/android/icon/mipmap-mdpi/launcher.png" target="app/src/main/res/mipmap-mdpi-v4/launcher.png" />
+        <resource-file src="resources/android/icon/mipmap-mdpi/launcher_round.png" target="app/src/main/res/mipmap-mdpi-v4/launcher_round.png" />
+        <resource-file src="resources/android/icon/mipmap-mdpi/launcher_foreground.png" target="app/src/main/res/mipmap-mdpi-v4/launcher_foreground.png" />
+        <resource-file src="resources/android/icon/mipmap-xhdpi/launcher.png" target="app/src/main/res/mipmap-xhdpi-v4/launcher.png" />
+        <resource-file src="resources/android/icon/mipmap-xhdpi/launcher_round.png" target="app/src/main/res/mipmap-xhdpi-v4/launcher_round.png" />
+        <resource-file src="resources/android/icon/mipmap-xhdpi/launcher_foreground.png" target="app/src/main/res/mipmap-xhdpi-v4/launcher_foreground.png" />
+        <resource-file src="resources/android/icon/mipmap-xxhdpi/launcher.png" target="app/src/main/res/mipmap-xxhdpi-v4/launcher.png" />
+        <resource-file src="resources/android/icon/mipmap-xxhdpi/launcher_round.png" target="app/src/main/res/mipmap-xxhdpi-v4/launcher_round.png" />
+        <resource-file src="resources/android/icon/mipmap-xxhdpi/launcher_foreground.png" target="app/src/main/res/mipmap-xxhdpi-v4/launcher_foreground.png" />
+        <resource-file src="resources/android/icon/mipmap-xxxhdpi/launcher.png" target="app/src/main/res/mipmap-xxxhdpi-v4/launcher.png" />
+        <resource-file src="resources/android/icon/mipmap-xxxhdpi/launcher_round.png" target="app/src/main/res/mipmap-xxxhdpi-v4/launcher_round.png" />
+        <resource-file src="resources/android/icon/mipmap-xxxhdpi/launcher_foreground.png" target="app/src/main/res/mipmap-xxxhdpi-v4/launcher_foreground.png" />
+        <resource-file src="resources/android/styles.xml" target="app/src/main/res/values/styles.xml" />
+        <splash density="port-ldpi" platform="android" src="resources/android/splash/splash-port-ldpi.png" />
+        <splash density="port-mdpi" platform="android" src="resources/android/splash/splash-port-mdpi.png" />
+        <splash density="port-hdpi" platform="android" src="resources/android/splash/splash-port-hdpi.png" />
+        <splash density="port-xhdpi" platform="android" src="resources/android/splash/splash-port-xhdpi.png" />
+        <splash density="port-xxhdpi" platform="android" src="resources/android/splash/splash-port-xxhdpi.png" />
+        <splash density="port-xxxhdpi" platform="android" src="resources/android/splash/splash-port-xxxhdpi.png" />
+        <splash density="land-ldpi" platform="android" src="resources/android/splash/splash-land-ldpi.png" />
+        <splash density="land-mdpi" platform="android" src="resources/android/splash/splash-land-mdpi.png" />
+        <splash density="land-hdpi" platform="android" src="resources/android/splash/splash-land-hdpi.png" />
+        <splash density="land-xhdpi" platform="android" src="resources/android/splash/splash-land-xhdpi.png" />
+        <splash density="land-xxhdpi" platform="android" src="resources/android/splash/splash-land-xxhdpi.png" />
+        <splash density="land-xxxhdpi" platform="android" src="resources/android/splash/splash-land-xxxhdpi.png" />
+        <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application/activity[@android:label='@string/activity_name']">
+            <activity android:theme="@style/htTheme" />
+        </edit-config>
+        <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:icon="@mipmap/launcher" android:roundIcon="@mipmap/launcher_round" />
+        </edit-config>
     </platform>
-    <splash density="port-ldpi" platform="android" src="resources/android/splash/splash-port-ldpi.png" />
-    <splash density="port-mdpi" platform="android" src="resources/android/splash/splash-port-mdpi.png" />
-    <splash density="port-hdpi" platform="android" src="resources/android/splash/splash-port-hdpi.png" />
-    <splash density="port-xhdpi" platform="android" src="resources/android/splash/splash-port-xhdpi.png" />
-    <splash density="port-xxhdpi" platform="android" src="resources/android/splash/splash-port-xxhdpi.png" />
-    <splash density="port-xxxhdpi" platform="android" src="resources/android/splash/splash-port-xxxhdpi.png" />
-    <splash density="land-ldpi" platform="android" src="resources/android/splash/splash-land-ldpi.png" />
-    <splash density="land-mdpi" platform="android" src="resources/android/splash/splash-land-mdpi.png" />
-    <splash density="land-hdpi" platform="android" src="resources/android/splash/splash-land-hdpi.png" />
-    <splash density="land-xhdpi" platform="android" src="resources/android/splash/splash-land-xhdpi.png" />
-    <splash density="land-xxhdpi" platform="android" src="resources/android/splash/splash-land-xxhdpi.png" />
-    <splash density="land-xxxhdpi" platform="android" src="resources/android/splash/splash-land-xxxhdpi.png" />
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
@@ -120,21 +123,21 @@
     <splash platform="ios" src="resources/ios/splash/Default@2x~ipad~comany.png" />
     <icon src="resources/icon.png" />
     <splash src="resources/splash.png" />
-    <engine name="android" spec="~6.3.0" />
-    <gap:plugin spec="https://github.com/brodysoft/cordova-sqlite-evcore-extbuild-free" />
+    <plugin name="cordova-sqlite-storage" />
     <plugin name="cordova-plugin-whitelist" spec="1.3.3" />
     <plugin name="cordova-plugin-statusbar" spec="2.4.2" />
     <plugin name="cordova-plugin-device" spec="2.0.2" />
-    <gap:plugin spec="https://github.com/pdyraga/cordova-plugin-splashscreen" />
+    <plugin name="cordova-plugin-splashscreen" spec="^6.0.0" />
     <plugin name="cordova-plugin-ionic-webview" spec="^2.4.1" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
-    <gap:plugin name="cordova-plugin-camera" source="npm" version="^4.1.0">
-        <param name="CAMERA_USAGE_DESCRIPTION" value="We are using the Camera to take pictures for an avatar" />
-        <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="We are using the Photo Library to get pictures for an avatar" />
-    </gap:plugin>
+    <plugin name="cordova-plugin-camera" spec="^4.1.0">
+        <variable name="CAMERA_USAGE_DESCRIPTION" value="We are using the Camera to take pictures for an avatar" />
+        <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="We are using the Photo Library to get pictures for an avatar" />
+    </plugin>
     <plugin name="cordova-plugin-file-transfer" spec="^1.7.1" />
     <plugin name="cordova-plugin-file" spec="^6.0.2" />
     <plugin name="cordova-plugin-inappbrowser" spec="^3.1.0" />
     <plugin name="cordova-plugin-network-information" spec="^2.0.2" />
     <plugin name="cordova-plugin-file-opener2" spec="^3.0.5" />
+    <plugin name="onesignal-cordova-plugin" spec="^2.11.4" />
 </widget>
