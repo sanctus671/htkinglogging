@@ -33,9 +33,6 @@
         <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application" xmlns:android="http://schemas.android.com/apk/res/android">
             <application android:networkSecurityConfig="@xml/network_security_config" />
         </edit-config>
-        <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application" xmlns:android="http://schemas.android.com/apk/res/android">
-            <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
-        </edit-config>
         <resource-file src="resources/android/icon/values/launcher_background.xml" target="app/src/main/res/values/launcher_background.xml" />
         <resource-file src="resources/android/icon/mipmap-anydpi-v26/launcher.xml" target="app/src/main/res/mipmap-anydpi-v26/launcher.xml" />
         <resource-file src="resources/android/icon/mipmap-anydpi-v26/launcher_round.xml" target="app/src/main/res/mipmap-anydpi-v26/launcher_round.xml" />
@@ -136,8 +133,9 @@
     </plugin>
     <plugin name="cordova-plugin-file-transfer" spec="^1.7.1" />
     <plugin name="cordova-plugin-file" spec="^6.0.2" />
-    <plugin name="cordova-plugin-inappbrowser" spec="^3.1.0" />
     <plugin name="cordova-plugin-network-information" spec="^2.0.2" />
     <plugin name="cordova-plugin-file-opener2" spec="^3.0.5" />
-    <plugin name="onesignal-cordova-plugin" spec="^2.11.4" />
+    <plugin name="onesignal-cordova-plugin" spec="^2.3.3" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^4.0.0" />
+    <engine name="android" spec="^7.1.4" />
 </widget>
